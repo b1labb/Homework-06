@@ -67,7 +67,7 @@ a  {
 
 
 a:hover {
-    color: #2196F3;
+    color: var(--sky-blue);
     
 }
 
@@ -92,25 +92,28 @@ a:hover {
     color: #2196F3;
     transform: translateY(0);
 }
-.header__navigation a::after{
+.header__navigation a::after
+{
     content: '';
     position: absolute;
     top: 45px;
     left: 0;
     width: 0;
     height: 5px;
-    border-radius: 20px;
+    border-radius: 200px;
     background-color: var(--sky-blue);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: width;
 }
+
 .header__navigation a:hover::after,
-.header__navigation a:active::after {
+.header__navigation a:active::after{
     width: 100%;
 } 
-    
-.header__navigation b{
+
+.header__navigation b
+{
     color: var(--sky-blue);
 }
 
@@ -463,7 +466,7 @@ button:focus {
 
 
 .regular__icon:hover {
-    stroke: #2196F3;
+    fill: #2196F3;
     border: 3px solid var(--sky-blue);
 }
 
