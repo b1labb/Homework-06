@@ -225,7 +225,6 @@ button:focus {
 
 .strong__section__container{
     width: 270px;
-    margin-right: 30px;
     
 }
 
@@ -246,6 +245,7 @@ button:focus {
 .strong__section {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 .strong__section__title {
@@ -254,7 +254,7 @@ button:focus {
     font-size: 14px;
     line-height: 16px;
     padding-bottom: 10px;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     margin-top: 30px;
 }
 
@@ -263,7 +263,7 @@ button:focus {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     /* margin-bottom: 94px; */
 
 }
@@ -456,11 +456,10 @@ button:focus {
 }
 
 .regular__icon {
-    width: 160px;
-    height: 75px;
+    width: 170px;
+    height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     padding: 11px 11px;
-    height: 85px;
     fill: var(--icon);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -475,19 +474,40 @@ button:focus {
 /* Footer section */
 
 
+.footer__container{
+    padding:60px 0px;
+    background-color: var(--light-black);
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer__section{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 100px;
+}
+
+
+
 .footer__logoweb {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 31px;
     line-height: 24px;
     color: var(--sky-blue);
+    
 }
-
-address {
+.footer__logo{
+    margin-bottom: 25px;
+}
+address a {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: var(--white);
+    color: var(--grey-);
+    
 }
 
 .footer-h3 {
@@ -499,13 +519,13 @@ address {
     padding-bottom: 20px;
 }
 
-.footer__icon {
+.footer-item__icon {
     list-style: none;
     display: flex;
     gap: 10px;
 }
 
-.footer__icon li {
+.footer-item__icon li {
     background-color: rgba(255, 255, 255, 0.1);;
     padding: 12px;
     border-radius: 100px;
@@ -513,18 +533,19 @@ address {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__icon li:hover {
+.footer-item__icon li:hover {
     background-color: var(--sky-blue);
 }
 
-.footer__icon__style {
+.footer-item__icon__style {
     width: 20px;
     height: 20px;
     display: flex;
     fill:rgba(255, 255, 255, 1);
 }
+
+
 .footer-form {
-    display: flex;
     gap: 12px;
 }
 
@@ -540,7 +561,6 @@ address {
     width: 358px;
     height: 50px;
     cursor: pointer;
-    /* outline: none; */
     background-color: var(--light-black);
     border: 1px solid var(--grey);
     border-radius: 4px;

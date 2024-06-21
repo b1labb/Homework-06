@@ -148,81 +148,83 @@
     </main>
 
     <!--Footer section-->
-    <footer 
-        style="
-        padding: 60px;
-        background-color: #2f303a;
-        margin-top: 94px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: flex-start;
-        align-items: center;
-      ">
-      <div 
-          style="
-          margin-right: 40px;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          justify-content: space-evenly;
-          align-items: flex-start;
-        ">
-        <div>
-          <a id="footer__logo" href="#">
+    <footer class="footer__container">
+      <div class="footer__section">
+
+      <div class="footer__address">
+        <div class="footer__logo">
+          <a href="#">
             <p>
               <b><span class="footer__logoweb">Web</span>Studio</b>
-            </p></a
-          >
+            </p></a>
         </div>
         <address>
-          <p>695 Park Ave, NY 10065, USA</p>
-          <p>info@devstudio.com</p>
-          <p>+1 212-772-4150</p>
+         <a href="https://www.google.it/maps/place/695+Park+Ave,+New+York,+NY+10065,+Stati+Uniti/@41.0756206,-74.7488713,9z/data=!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu"><b><p>695 Park Ave, NY 10065, USA</p></b></a>
+         <a href="mailto:info@devstudio.com"><p>info@devstudio.com</p></a>
+         <a href="tel:+12127724150"><p>+1 212-772-4150</p></a>
         </address>
       </div>
-      <div 
-          style="
-          margin-right: 40px;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          justify-content: space-evenly;
-          align-items: flex-start;">
 
+
+      <div class="footer-item">
         <h3 class="footer-h3">FIND US ON</h3>
-        <ul class="footer__icon">
+        <ul class="footer-item__icon">
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-instagram-21" />
               </svg>
             </a>
           </li>
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-twitter-11" />
               </svg>
             </a>
           </li>
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-facebook-11" />
               </svg>
             </a>
           </li>
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-linkedin-11" />
               </svg>
             </a>
           </li>
         </ul>
       </div>
+
+      <div>
+        <h3 class="footer-form__title"><b>Subscribe to the newsletter</b></h3>
+        <form class="footer-form">
+          <label class="footer-form__label">
+            <input
+              type="email"
+              name="useremail"
+              placeholder="E-mail"
+              class="footer-form__input"
+            />
+          </label>
+          <button type="submit" class="footer-form__btn">
+            <b>Subscribe</b>
+            <svg>
+              <use
+                href="./images/form-icons.svg#icon-send"
+                width="24"
+                height="24"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
     </footer>
   </body>
 </html>

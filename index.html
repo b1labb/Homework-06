@@ -17,25 +17,37 @@
   </head>
   <body class="first__page">
     <!--Header Section-->
-    <header class="header"> 
+    <header class="header">
       <div class="containter">
         <div>
           <a href="index.html"
-            ><p>
-              <span class="header__logo__web">Web</span>Studio
-            </p></a
+            ><p><span class="header__logo__web">Web</span>Studio</p></a
           >
         </div>
         <nav class="header__navigation">
           <ul>
-            <li><a href="index.html" class="nav-link active" ><b>Studio</b></a></li>
-            <li><a href="portfolio.html" class="nav-link" >Portfolio</a></li>
-            <li><a href="#" class="nav-link" >Contacts</a></li>
+            <li>
+              <a href="index.html" class="nav-link active"><b>Studio</b></a>
+            </li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="#" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
         <div class="header__info">
-          <a href="malito:info@devstudio.com"><svg class="header__icon"><use href="./images/symbol-defs.svg#icon-envelope1" width="16" /></svg>info@devstudio.com</a>
-          <a href="tell:+12127724150"><svg class="header__icon"><use href="./images/symbol-defs.svg#icon-smartphone1" width="10"  /></svg>+12127724150</a>
+          <a href="malito:info@devstudio.com"
+            ><svg class="header__icon">
+              <use
+                href="./images/symbol-defs.svg#icon-envelope1"
+                width="16"
+              /></svg>info@devstudio.com</a
+          >
+          <a href="tell:+12127724150"
+            ><svg class="header__icon">
+              <use
+                href="./images/symbol-defs.svg#icon-smartphone1"
+                width="10"
+              /></svg>+12127724150</a
+          >
         </div>
       </div>
     </header>
@@ -48,7 +60,9 @@
             EFFECTIVE SOLUTIONS FOR<br />
             YOUR BUSINESS
           </h1>
-          <button data-modal-open class="service" type="button">Request our service</button>
+          <button data-modal-open class="service" type="button">
+            Request our service
+          </button>
         </div>
       </div>
       <!--Strong points Section-->
@@ -59,7 +73,7 @@
             <div class="strong__section__container">
               <div class="strong__section__point">
                 <svg class="strong__section__svg">
-                  <use href="./images/symbol-defs.svg#icon-antenna-11"  />
+                  <use href="./images/symbol-defs.svg#icon-antenna-11" />
                 </svg>
               </div>
               <h4 class="strong__section__title">ATTENTION TO DETAILS</h4>
@@ -346,75 +360,52 @@
       </section>
     </main>
     <!--Footer section-->
-    <footer 
-        style="
-        padding: 60px;
-        background-color: #2f303a;
-        margin-top: 94px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: flex-start;
-        align-items: center;
-      ">
-      <div 
-          style="
-          margin-right: 40px;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          justify-content: space-evenly;
-          align-items: flex-start;
-        ">
-        <div>
-          <a id="footer__logo" href="#">
+
+    <footer class="footer__container">
+      <div class="footer__section">
+
+      <div class="footer__address">
+        <div class="footer__logo">
+          <a href="#">
             <p>
               <b><span class="footer__logoweb">Web</span>Studio</b>
-            </p></a
-          >
+            </p></a>
         </div>
         <address>
-          <p>695 Park Ave, NY 10065, USA</p>
-          <p>info@devstudio.com</p>
-          <p>+1 212-772-4150</p>
+         <a href="https://www.google.it/maps/place/695+Park+Ave,+New+York,+NY+10065,+Stati+Uniti/@41.0756206,-74.7488713,9z/data=!4m6!3m5!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7688994!4d-73.9650256!16s%2Fg%2F11c250btd8?entry=ttu"><b><p>695 Park Ave, NY 10065, USA</p></b></a>
+         <a href="mailto:info@devstudio.com"><p>info@devstudio.com</p></a>
+         <a href="tel:+12127724150"><p>+1 212-772-4150</p></a>
         </address>
       </div>
-      <div 
-          style="
-          margin-right: 40px;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          justify-content: space-evenly;
-          align-items: flex-start;">
 
+
+      <div class="footer-item">
         <h3 class="footer-h3">FIND US ON</h3>
-        <ul class="footer__icon">
+        <ul class="footer-item__icon">
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-instagram-21" />
               </svg>
             </a>
           </li>
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-twitter-11" />
               </svg>
             </a>
           </li>
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-facebook-11" />
               </svg>
             </a>
           </li>
           <li>
             <a href="">
-              <svg class="footer__icon__style">
+              <svg class="footer-item__icon__style">
                 <use href="./images/symbol-defs.svg#icon-linkedin-11" />
               </svg>
             </a>
@@ -422,55 +413,85 @@
         </ul>
       </div>
 
+
       <div>
         <h3 class="footer-form__title"><b>Subscribe to the newsletter</b></h3>
         <form class="footer-form">
           <label class="footer-form__label">
-            <input type="email" name="useremail" placeholder="E-mail" class="footer-form__input">
+            <input
+              type="email"
+              name="useremail"
+              placeholder="E-mail"
+              class="footer-form__input"
+            />
           </label>
-          <button type="submit" class="footer-form__btn"><b>Subscribe</b>
-            <svg><use href="./images/form-icons.svg#icon-send" width="24" height="24"/></svg>
+          <button type="submit" class="footer-form__btn">
+            <b>Subscribe</b>
+            <svg>
+              <use
+                href="./images/form-icons.svg#icon-send"
+                width="24"
+                height="24"
+              />
+            </svg>
           </button>
         </form>
       </div>
+
+    </div>
     </footer>
+
+
     <div data-modal class="is-hidden">
       <div data-modal-content>
         <button data-modal-close type="button">x</button>
-        <h2 class="modal-title">Leave your information and we'll call you back</h2>
-       
+        <h2 class="modal-title">
+          Leave your information and we'll call you back
+        </h2>
 
-      <form name="modal-from" class="modal-form">
-        <label class="modal-form__position">
-          Name
-          <input type="text" name="username" class="modal-form__input"/>
-          <svg>
-            <use href="./images/form-icons.svg#icon-person" /></svg>
-        </label>
-        <label class="modal-form__position">
-          Telefone
-          <input type="tel" name="userphone" class="modal-form__input"/>
-          <svg><use href="./images/form-icons.svg#icon-phone" /></svg>
-        </label>
-        <label class="modal-form__position">
-          Email
-          <input type="email" name="useremail" class="modal-form__input"/>
-          <svg><use href="./images/form-icons.svg#icon-email" /></svg>
-        </label>
-        <label class="modal-form__position">
-          Mesaj
-          <textarea name="mesaj" placeholder="Introdu meesajul tau" class="modal-form__comments">            
-          </textarea>
-        </label>
-        <label class="modal-form__position modal-form__checked ">
-          <input type="checkbox" name="agree" value="agree" class="modal-form__input"/>
-          <span class="replace-checkbox modal-checkbox__position">
-          <svg><use href="./images/form-icons.svg#icon-checked"/></svg>
-          </span>
-          I agree with the letter and accept the<a href="#" class="condition">Terms and Conditions</a> 
-        </label>
-        <button type="submit" class="modal-form__btn">Send</button>
-       </form>
+        <form name="modal-from" class="modal-form">
+          <label class="modal-form__position">
+            Name
+            <input type="text" name="username" class="modal-form__input" />
+            <svg>
+              <use href="./images/form-icons.svg#icon-person" />
+            </svg>
+          </label>
+          <label class="modal-form__position">
+            Telefone
+            <input type="tel" name="userphone" class="modal-form__input" />
+            <svg><use href="./images/form-icons.svg#icon-phone" /></svg>
+          </label>
+          <label class="modal-form__position">
+            Email
+            <input type="email" name="useremail" class="modal-form__input" />
+            <svg><use href="./images/form-icons.svg#icon-email" /></svg>
+          </label>
+          <label class="modal-form__position">
+            Mesaj
+            <textarea
+              name="mesaj"
+              placeholder="Introdu meesajul tau"
+              class="modal-form__comments"
+            >
+            </textarea>
+          </label>
+          <label class="modal-form__position modal-form__checked">
+            <input
+              type="checkbox"
+              name="agree"
+              value="agree"
+              class="modal-form__input"
+            />
+            <span class="replace-checkbox modal-checkbox__position">
+              <svg><use href="./images/form-icons.svg#icon-checked" /></svg>
+            </span>
+            I agree with the letter and accept the<a href="#" class="condition"
+              >Terms and Conditions</a
+            >
+          </label>
+          <button type="submit" class="modal-form__btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="modal.js"></script>
