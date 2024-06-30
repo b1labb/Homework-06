@@ -254,7 +254,6 @@ button:focus {
     font-size: 14px;
     line-height: 16px;
     padding-bottom: 10px;
-    /* padding-right: 30px; */
     margin-top: 30px;
 }
 
@@ -263,9 +262,6 @@ button:focus {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* padding-right: 30px; */
-    /* margin-bottom: 94px; */
-
 }
 
 .what-we-do {
@@ -278,13 +274,38 @@ button:focus {
 }
 
 .what-we-do__image {
-
     justify-content: center;
     display: flex;
     gap: 30px;
 }
 
+.what-we-do__card{
+    position: relative;
+}
 
+.what-we-do__card::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--light-black);
+    opacity: 0.8;
+}
+
+.what-we-do__subtitle{
+    position: absolute;
+    bottom: 27px;
+    color: var(--white);
+    text-transform: uppercase;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 700;
+    left: 130px;
+    
+}
 
 /* Conteiner project realizate */
 
